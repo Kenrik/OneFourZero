@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.codepath.apps.onefourzero.activities.TweetDetailActivity"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivProfileImage_detail"
+        android:layout_marginTop="10dp"
+        android:minHeight="70dp"
+        android:minWidth="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jonny Appleseed"
+        android:id="@+id/tvUserName_detail"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivProfileImage_detail"
+        android:layout_toEndOf="@+id/ivProfileImage_detail"
+        android:textColor="@color/material_deep_teal_500"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body"
+        android:id="@+id/tvBody_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tvUserName_detail"
+        android:minHeight="40dp"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_toRightOf="@+id/ivProfileImage_detail" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvBody_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-reply}"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/itvReply_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-retweet}"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/itvRetweet_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retweet"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tvRetweet_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="{fa-star}"
+            android:layout_marginLeft="90dp"
+            android:id="@+id/itvStar_detail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Star"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tvStar_detail" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/tvTime_detail"
+        android:layout_above="@+id/tvBody"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tvUserName_detail"
+        android:layout_toEndOf="@+id/tvUserName_detail"
+        android:gravity="end"
+        android:textSize="12dp"
+        android:textColor="@color/highlighted_text_material_light" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ivMediaImage"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            android:minHeight="450dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageView"
+            android:src="@drawable/login_bg"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:onClick="loginToRest"
+            android:text="@string/login_label"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnLogin"
+            android:background="#ff3c5562"
+            android:textColor="#ffffffff"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

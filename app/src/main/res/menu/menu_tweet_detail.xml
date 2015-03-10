@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.codepath.apps.onefourzero.activities.TweetDetailActivity">
+    <item
+        android:id="@+id/reply_tweet"
+        android:title="@string/reply"
+        app:showAsAction="always" />
+</menu>

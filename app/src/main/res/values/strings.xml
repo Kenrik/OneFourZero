@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">140</string>
+    <string name="login_label">Login</string>
+    <string name="title_activity_timeline">TimelineActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="compose">Compose</string>
+    <string name="username_placeholder">Jonny Appleseed</string>
+    <string name="title_activity_tweet_detail">TweetDetailActivity</string>
+    <string name="reply">Reply</string>
+
+</resources>
