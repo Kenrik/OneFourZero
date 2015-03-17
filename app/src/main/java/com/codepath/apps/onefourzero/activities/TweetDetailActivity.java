@@ -89,7 +89,7 @@ public class TweetDetailActivity extends ActionBarActivity implements TweetFragm
             Bundle bundle = new Bundle();
             bundle.putParcelable("tweet",tweet);
             bundle.putString("title"," • Reply to Tweet");
-            bundle.putString("hint","Tell the person they are wrong");
+            bundle.putString("hint","Reply");
             tweetFragment.setArguments(bundle);
             tweetFragment.show(fm,"fragment_tweet");
             return true;

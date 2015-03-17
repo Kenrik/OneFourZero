@@ -21,7 +21,7 @@
             android:src="@drawable/login_bg"
             android:layout_centerHorizontal="true" />
 
-        <Button
+        <IconButton
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:onClick="loginToRest"
